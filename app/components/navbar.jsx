@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
@@ -8,14 +9,14 @@ const navbar = () => {
     <div className="w-full h-20 lg:h-28 border-b-[1px] text-black lg:text-white lg:bg-transparent bg-white">
       <div className="max-w-screen-xl mx-auto h-full px-4 flex justify-between items-center">
         <h1 className="text-2xl uppercase font-semibold hover:cursor-default hover:text-[#FFD700] duration-300">
-          Footery
+          <Link href="/">Footery</Link>
         </h1>
         <ul className="hidden lg:inline-flex uppercase font-semibold text-sm gap-8">
           <li className="hover:text-[#FFD700] cursor-pointer duration-300">
-            Home
+            <Link href="/">Home</Link>
           </li>
           <li className="hover:text-[#FFD700] cursor-pointer duration-300">
-            About
+            <Link href="/About">About</Link>
           </li>
           <li className="hover:text-[#FFD700] cursor-pointer duration-300">
             Contact

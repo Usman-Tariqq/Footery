@@ -6,7 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8 bg-black opacity-70 text-white">
+    <footer className="w-full py-8 text-white">
       <div className="md:flex md:justify-between items-center px-4">
         <a href="/" className="flex items-center">
           <span className="text-2xl uppercase font-semibold hover:underline">
