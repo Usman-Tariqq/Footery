@@ -7,8 +7,8 @@ import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-[#ffffff] via-[#ffed00] to-[#ff9800]">
-      <div className="w-full bg-black opacity-70 text-white">
+    <main className="w-screen bg-gradient-to-br from-[#cfc9c9] via-[#ffed00] to-[#ff9800] overflow-hidden">
+      <div className="w-screen bg-black opacity-70 text-white">
         <Navbar />
       </div>
       <Banner />

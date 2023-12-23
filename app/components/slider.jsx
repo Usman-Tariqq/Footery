@@ -1,11 +1,6 @@
-import React, { useRef, useState } from "react";
 import Product from "./Product";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-// import required modules
 import { Autoplay } from "swiper/modules";
 
 export default function App() {
@@ -22,17 +17,25 @@ export default function App() {
         modules={[Autoplay]}
         className="mySwiper"
         breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20, 
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 50,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 50, 
           },
         }}
       >
