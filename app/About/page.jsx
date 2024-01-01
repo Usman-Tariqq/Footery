@@ -13,24 +13,29 @@ const Page = () => {
         <Navbar />
       </div>
       <div className="flex flex-col lg:flex-row-reverse justify-between mx-4 md:mx-8 my-8 md:my-12">
-        <img src="/temp.png" className="w-full sm:w-[100%] lg:w-[50%] mb-4 md:mb-0 p-4" alt="Temp"/>
+        <img
+          src="/temp.png"
+          className="w-full sm:w-[100%] lg:w-[50%] mb-4 md:mb-0 p-4"
+          alt="Temp"
+        />
         <blockquote className="flex-grow h-auto md:h-28 p-4 md:ml-8 border-s-4 border-[#ff9800] font-normal text-black text-sm">
           <div>
             <h1 className="font-bold text-5xl mt-2">About Us</h1>
             <p className="text-lg font-semibold text-black pt-6">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-              deleniti labore quam culpa atque, nobis, voluptates blanditiis
-              dolores impedit iste non tenetur doloribus reprehenderit incidunt
-              ipsam voluptate, quisquam ea praesentium odio delectus iure nostrum
-              quas expedita. Unde quod hic quisquam. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Voluptatum eos, ut nesciunt ipsum
-              deleniti culpa laborum. Dolore sequi dolorum optio amet fugiat sed
-              aut odio eligendi, consectetur quod earum aspernatur.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Temporibus deleniti labore quam culpa atque, nobis, voluptates
+              blanditiis dolores impedit iste non tenetur doloribus
+              reprehenderit incidunt ipsam voluptate, quisquam ea praesentium
+              odio delectus iure nostrum quas expedita. Unde quod hic quisquam.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum eos, ut nesciunt ipsum deleniti culpa laborum. Dolore
+              sequi dolorum optio amet fugiat sed aut odio eligendi, consectetur
+              quod earum aspernatur.
             </p>
           </div>
         </blockquote>
       </div>
-      <div className="flex flex-wrap justify-around sm:pt-52 lg:pt-0 mx-4 md:mx-8 my-8 md:my-12">
+      <div className="flex flex-wrap justify-around sm:pt-52 lg:pt-52 lg:grid lg:grid-cols-2 lg:place-items-center xl:flex xl:flex-wrap xl:pt-0 mx-4 md:mx-8 my-8 md:my-12">
         <div className="bg-white w-full md:w-72 py-2 flex flex-col justify-center items-center mb-4 md:mb-0">
           <FaRegFileAlt className="text-[#ff9800] text-4xl" />
           <h1 className="font-bold text-2xl text-black pt-4">2084</h1>
