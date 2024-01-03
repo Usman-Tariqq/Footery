@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 
-const ProductPage = () => {
+const ProductPage = ({name , price, description , title, image}) => {
     const [images, setImages] = useState({
       img1: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
-      img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bb12b275-5cef-4ebc-afc8-93b52e0df566/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
+      img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d418bb33-8a0f-4ede-bf51-1e32a383cc89/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
       img3: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b4f83aac-6524-4041-9ada-cd850d7c92e1/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
       img4: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bb12b275-5cef-4ebc-afc8-93b52e0df566/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
     });
@@ -54,16 +54,14 @@ const ProductPage = () => {
           <div className="flex flex-col gap-4 lg:w-2/4">
             <div>
               <span className="text-violet-600 font-semibold">
-                Special Jordan
+                {title}
               </span>
-              <h1 className="font-bold text-3xl">Air Jordan 1</h1>
+              <h1 className="font-bold text-3xl">{name}</h1>
             </div>
             <p className="text-gray-700 lg:text-lg">
-              The Air Jordan 1 Mid brings full-court style and premium comfort to
-              an iconic look. Its Air-Sole unit cushions play on the hardwood,
-              while the padded collar gives you a supportive feel.
+              {description}
             </p>
-            <h6 className="text-2xl font-semibold">$ 199.00</h6>
+            <h6 className="text-2xl font-semibold">$ {price}</h6>
             <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
               <div className="flex flex-row items-center">
                 <button
@@ -93,4 +91,3 @@ const ProductPage = () => {
   };
   
   export default ProductPage;
-  

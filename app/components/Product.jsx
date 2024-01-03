@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Product = ({ name, price, image }) => {
   return (
-    <Link href="/ProductPage">
+    <Link href="/Productpage">
     <div className="w-90 rounded-lg shadow-black shadow-lg mt-20 mx-auto p-4 bg-white mb-20">
       <img className="w-full rounded-2xl object-cover h-96" src={image} />
       <div className="flex flex-col justify-center px-2 py-2 rounded-md">

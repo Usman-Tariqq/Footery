@@ -19,7 +19,7 @@ export default function App() {
         breakpoints={{
           320: {
             slidesPerView: 1,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
           640: {
             slidesPerView: 2,
@@ -35,19 +35,21 @@ export default function App() {
           },
           1280: {
             slidesPerView: 3,
-            spaceBetween: 50, 
+            spaceBetween: 50,
           },
         }}
       >
         <SwiperSlide>
           <Product
-            name="Nike SuperRep Go"
-            price={269}
+            id="1"
+            name="Air Jordan 1"
+            price={199}
             image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Product
+            id="2"
             name="Nike Sneakers"
             price={349}
             image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg"
