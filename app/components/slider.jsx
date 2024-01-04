@@ -42,33 +42,33 @@ export default function App() {
         <SwiperSlide>
           <Product
             id="1"
-            name="Air Jordan 1"
-            price={199}
-            image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png"
+            name="Air Jordan 1 Low SE Craft"
+            price={95}
+            image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/894eb4f9-f99b-4378-908f-528365462eef/air-jordan-1-low-se-craft-big-kids-shoes-NJWNGh.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Product
             id="2"
-            name="Nike Sneakers"
-            price={349}
-            image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg"
+            name="Air Jordan 1 Mid"
+            price={125}
+            image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Product
           id="3"
-            name="Nike Extended"
-            price={189}
-            image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c60cd4a11b6945599e15a81a017fb25f_9366/Samba_Classic_Black_034563_01_standard.jpg"
+            name="Air Jordan 1 Retro High OG"
+            price={180}
+            image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fd8ed81b-130b-4580-9c8c-bb1d66c77231/air-jordan-1-retro-high-og-mens-shoes-JHpxkn.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Product
           id="4"
-            name="Nike Express"
-            price={289}
-            image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a34f007a106043afb2f3afab00e997ee_9366/Samba_OG_Shoes_White_IG1024_01_standard.jpg"
+            name="Air Jordan 1 Element"
+            price={200}
+            image="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fdddfb3c-fc17-45f5-b45a-c824a2683b81/air-jordan-1-element-shoes-Kcsdzl.png"
           />
         </SwiperSlide>
       </Swiper>

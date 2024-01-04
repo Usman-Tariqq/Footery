@@ -2,92 +2,131 @@
 import React, { useState } from "react";
 
 
-const ProductPage = ({product}) => {
-    const [images, setImages] = useState({
-      img1: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
-      img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d418bb33-8a0f-4ede-bf51-1e32a383cc89/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
-      img3: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b4f83aac-6524-4041-9ada-cd850d7c92e1/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
-      img4: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bb12b275-5cef-4ebc-afc8-93b52e0df566/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
-    });
-  
-    const [activeImage, setActiveImage] = useState(images.img1);
-  
-    const [amount, setAmount] = useState(1);
-  
-    return (
-      <div className="max-w-7xl mx-auto p-8">
-        <div className="flex flex-col lg:flex-row justify-between gap-16 lg:items-center">
-          <div className="flex flex-col gap-6 lg:w-2/4">
+const ProductPage = ({ product }) => {
+
+  const [activeImage, setActiveImage] = useState(product.images[0]);
+
+  const [amount, setAmount] = useState(1);
+
+  return (
+    <div className="max-w-7xl p-8 overflow-hidden">
+      <div className="flex flex-col lg:flex-row justify-between gap-16 lg:items-center">
+        <div className="flex flex-col gap-6 lg:w-2/4">
+          <img
+            src={activeImage}
+            alt=""
+            className="w-full h-full aspect-square object-cover rounded-xl"
+          />
+          <div className="grid grid-cols-3 mx-auto lg:grid lg:grid-cols-3 xl:flex md:flex flex-row justify-around gap-2 md:gap-6">
             <img
-              src={activeImage}
+              src={product.images[0]}
               alt=""
-              className="w-full h-full aspect-square object-cover rounded-xl"
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[0])}
             />
-            <div className="flex flex-row justify-between h-24">
-              <img
-                src={images.img1}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img1)}
-              />
-              <img
-                src={images.img2}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img2)}
-              />
-              <img
-                src={images.img3}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img3)}
-              />
-              <img
-                src={images.img4}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img4)}
-              />
-            </div>
+            <img
+              src={product.images[1]}
+              alt=""
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[1])}
+            />
+            <img
+              src={product.images[2]}
+              alt=""
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[2])}
+            />
+            <img
+              src={product.images[3]}
+              alt=""
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[3])}
+            />
+            <img
+              src={product.images[4]}
+              alt=""
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[4])}
+            />
+            <img
+              src={product.images[5]}
+              alt=""
+              className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
+              onClick={() => setActiveImage(product.images[5])}
+            />
           </div>
-          {/* ABOUT */}
-          <div className="flex flex-col gap-4 lg:w-2/4">
-            <div>
-              <span className="text-violet-600 font-semibold">
-                {product.name}
+        </div>
+        {/* ABOUT */}
+        <div className="flex flex-col gap-4 lg:w-2/4">
+          <div>
+            <span className="text-violet-600 font-semibold cursor-default">
+              {product.title}
+            </span>
+            <h1 className="font-bold text-3xl cursor-default mt-2">{product.name}</h1>
+          </div>
+          <span class="flex items-center gap-2">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg> 
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-orange-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span class="text-gray-500 hover:text-black cursor-pointer">4 Reviews</span>
+          </span>
+          <div className="flex items-center pb-5 border-b-2 border-black gap-1 cursor-default">
+            <span className="text-md">Color:</span>
+            <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-black hover:border-gray-500 transition ease-in duration-300"></button>
+            <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-blue-500 hover:border-gray-500 transition ease-in duration-300"></button>
+            <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-red-500 hover:border-gray-500 transition ease-in duration-300"></button>
+          <div className="flex ml-4 gap-2 items-center cursor-default">
+            <span>Size: </span>
+            <select className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10">
+              <option >SM</option>
+              <option >M</option>
+              <option >L</option>
+              <option >XL</option>
+            </select>
+          </div>
+          </div>
+          <p className="text-black lg:text-lg">
+            {product.description}
+          </p>
+          <h6 className="text-2xl font-semibold cursor-default">$ {product.price}</h6>
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
+            <div className="flex flex-row items-center">
+              <button
+                className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"
+                onClick={() => setAmount((prev) => (prev > 0 ? prev - 1 : 0))}
+              >
+                -
+              </button>
+              <span className="py-2 px-4 rounded-lg text-lg lg:text-xl cursor-default">
+                {amount}
               </span>
-              <h1 className="font-bold text-3xl">{product.name}</h1>
-            </div>
-            <p className="text-gray-700 lg:text-lg">
-              {/* {product.description} */}
-            </p>
-            {/* <h6 className="text-2xl font-semibold">$ {price}</h6> */}
-            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
-              <div className="flex flex-row items-center">
-                <button
-                  className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"
-                  onClick={() => setAmount((prev) => (prev > 0 ? prev - 1 : 0))}
-                >
-                  -
-                </button>
-                <span className="py-2 px-4 rounded-lg text-lg lg:text-xl">
-                  {/* {product.price} */}
-                </span>
-                <button
-                  className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"
-                  onClick={() => setAmount((prev) => prev + 1)}
-                >
-                  +
-                </button>
-              </div>
-              <button className="bg-violet-800 text-white font-semibold py-2 px-8 lg:py-3 lg:px-16 rounded-xl h-full">
-                Add to Cart
+              <button
+                className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"
+                onClick={() => setAmount((prev) => prev + 1)}
+              >
+                +
               </button>
             </div>
+            <button className="bg-violet-800 text-white font-semibold py-2 px-8 lg:py-3 lg:px-16 rounded-xl h-full">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default ProductPage;
+    </div>
+  );
+};
+
+export default ProductPage;

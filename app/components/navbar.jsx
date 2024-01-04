@@ -91,9 +91,15 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
 
 const navbar = () => {
+
   const [isClick, setisClick] = useState(false);
+  const [isOpen, setisOpen] = useState(false);
+
   const toggleNavbar = () => {
     setisClick(!isClick);
+  };
+  const toggleSearch = () => {
+    setisOpen(!isOpen);
   };
 
   return (
@@ -134,7 +140,14 @@ const navbar = () => {
             </div>
             <div className="hidden lg:flex items-center gap-6">
               <FaShoppingCart className="hover:text-[#FFD700] cursor-pointer duration-300" />
-              <FaSearch className="hover:text-[#FFD700] cursor-pointer duration-300" />
+              <FaSearch className="hover:text-[#FFD700] cursor-pointer duration-300"
+                onClick={toggleSearch}
+              />
+              {isOpen && (
+                <div className="w-full bg-white p-2">
+                  <input type="text" />
+                </div>
+              )}
               <button className="w-40 h-12 bg-white text-black font-semibold uppercase text-sm rounded-md hover:bg-[#FFD700] hover:text-black duration-300">
                 Get in Touch
               </button>
