@@ -1,11 +1,14 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const Product = ({ name, price, image }) => {
+const Product = ({ name, price, image, id}) => {
+
+  const router = useRouter()
+  const productid = parseInt(id)
+
   return (
-    <Link href="/Productpage">
-    <div className="w-90 rounded-lg shadow-black shadow-lg mt-20 mx-auto p-4 bg-white mb-20">
+    <div className="w-90 rounded-lg shadow-black shadow-lg mt-20 mx-auto p-4 bg-white mb-20" onClick={() => router.push(`/ProductPage/${productid}`)}>
       <img className="w-full rounded-2xl object-cover h-96" src={image} />
       <div className="flex flex-col justify-center px-2 py-2 rounded-md">
         <h5 className="text-lg">{name}</h5>
@@ -17,8 +20,7 @@ const Product = ({ name, price, image }) => {
           </button>
         </div>
       </div>
-    </div> 
-    </Link>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 
-const ProductPage = ({name , price, description , title, image}) => {
+const ProductPage = ({product}) => {
     const [images, setImages] = useState({
       img1: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd4cf472-051a-4699-964b-443b3364b2bb/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
       img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d418bb33-8a0f-4ede-bf51-1e32a383cc89/air-jordan-1-mid-womens-shoes-TB9sVQ.png",
@@ -54,14 +54,14 @@ const ProductPage = ({name , price, description , title, image}) => {
           <div className="flex flex-col gap-4 lg:w-2/4">
             <div>
               <span className="text-violet-600 font-semibold">
-                {title}
+                {product.name}
               </span>
-              <h1 className="font-bold text-3xl">{name}</h1>
+              <h1 className="font-bold text-3xl">{product.name}</h1>
             </div>
             <p className="text-gray-700 lg:text-lg">
-              {description}
+              {/* {product.description} */}
             </p>
-            <h6 className="text-2xl font-semibold">$ {price}</h6>
+            {/* <h6 className="text-2xl font-semibold">$ {price}</h6> */}
             <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
               <div className="flex flex-row items-center">
                 <button
@@ -71,7 +71,7 @@ const ProductPage = ({name , price, description , title, image}) => {
                   -
                 </button>
                 <span className="py-2 px-4 rounded-lg text-lg lg:text-xl">
-                  {amount}
+                  {/* {product.price} */}
                 </span>
                 <button
                   className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"

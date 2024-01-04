@@ -57,6 +57,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <Product
+          id="3"
             name="Nike Extended"
             price={189}
             image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c60cd4a11b6945599e15a81a017fb25f_9366/Samba_Classic_Black_034563_01_standard.jpg"
@@ -64,6 +65,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <Product
+          id="4"
             name="Nike Express"
             price={289}
             image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a34f007a106043afb2f3afab00e997ee_9366/Samba_OG_Shoes_White_IG1024_01_standard.jpg"
