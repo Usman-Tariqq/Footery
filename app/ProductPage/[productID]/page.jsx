@@ -6,6 +6,7 @@ import Footer from "@/app/components/footer";
 
 export default function productPage({ params }) {
     const productID = params.productID
+    // selecting singular item's id from item var and converting its value to integar
     const product = items.find(item => item.id === parseInt(productID))
 
     return (
