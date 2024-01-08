@@ -2,7 +2,7 @@
 import Navbar from "./components/navbar";
 import Banner from "./components/Banner";
 import Slider from "./components/slider";
-import Newsletter from "./components/newsletter";
+import { ContactUs } from "./components/newsletter";
 import Footer from "./components/footer";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <Slider />
       </div>
       <div className="flex justify-center items-center w-full px-2">
-        <Newsletter />
+        <ContactUs />
       </div>
       <div className="bg-black opacity-70">
         <Footer />

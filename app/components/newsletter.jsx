@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
-const newsletter = () => {
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_h4j3h52', 'template_pfiwmrh', form.current, 'yiRMylYaMaqNDarnE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="flex flex-col justify-center items-center sm:w-full mb-10">
       <h1 className="font-bold text-2xl md:text-3xl mt-10 text-black">
@@ -12,25 +26,23 @@ const newsletter = () => {
         you news about our latest launch as soon as they launch
       </p>
       <div className="flex justify-center items-center mt-4">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             className="text-black w-56 sm:w-64 md:w-[530px] indent-4 rounded-l p-1"
             type="email"
-            name="name"
+            name="from_email"
             placeholder="Enter your email"
           />
-          <button className="font-medium bg-black text-white text-md p-1 rounded-r">
+          <button  type="submit" className="font-medium bg-black text-white text-md p-1 rounded-r" value="Send">
             <p>Subscribe</p>
           </button>
         </form>
       </div>
       <div className="flex justify-center items-center mt-2">
-      <p className="mx-10 pl-2 sm:pl-0 sm:mx-4 md:text-xl text-black">
-        We care about the protection of your data <span className="text-blue-500 hover:underline hover:cursor-pointer">Read our Privacy Policy.</span>
-      </p>
+        <p className="mx-10 pl-2 sm:pl-0 sm:mx-4 md:text-xl text-black">
+          We care about the protection of your data <span className="text-blue-500 hover:underline hover:cursor-pointer">Read our Privacy Policy.</span>
+        </p>
       </div>
     </div>
   );
 };
-
-export default newsletter;

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const Product = ({ name, price, image, id}) => {
 
   const router = useRouter()
-  // defining id AFTER GIVING ID CARDS IN SLIDER as a variable to give id to the product page to render the next director (productpage)
+  // defining id AFTER GIVING ID TO CARDS IN SLIDER as a variable to give id to the product page to render the next directory (productpage)
   const productid = parseInt(id)
 
 

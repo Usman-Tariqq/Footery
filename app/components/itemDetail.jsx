@@ -4,9 +4,13 @@ import React, { useState } from "react";
 
 const ProductPage = ({ product }) => {
 
-  const [activeImage, setActiveImage] = useState(product.images[0]);
-
   const [amount, setAmount] = useState(1);
+
+  const [showRedProduct, setShowRedProduct] = useState(false);
+  const productToShow = showRedProduct ? product.red : product;
+
+  const [activeImage, setActiveImage] = useState(productToShow.images[0]);
+  
 
   return (
     <div className="max-w-7xl p-8 overflow-hidden">
@@ -19,40 +23,40 @@ const ProductPage = ({ product }) => {
           />
           <div className="grid grid-cols-3 mx-auto lg:grid lg:grid-cols-3 xl:flex md:flex flex-row justify-around gap-2 md:gap-6">
             <img
-              src={product.images[0]}
+              src={productToShow.images[0]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
-              onClick={() => setActiveImage(product.images[0])}
+              onClick={() => setActiveImage(productToShow.images[0])}
             />
             <img
-              src={product.images[1]}
+              src={productToShow.images[1]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
-              onClick={() => setActiveImage(product.images[1])}
+              onClick={() => setActiveImage(productToShow.images[1])}
             />
             <img
-              src={product.images[2]}
+              src={productToShow.images[2]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
-              onClick={() => setActiveImage(product.images[2])}
+              onClick={() => setActiveImage(productToShow.images[2])}
             />
             <img
-              src={product.images[3]}
+              src={productToShow.images[3]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
               onClick={() => setActiveImage(product.images[3])}
             />
             <img
-              src={product.images[4]}
+              src={productToShow.images[4]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
-              onClick={() => setActiveImage(product.images[4])}
+              onClick={() => setActiveImage(productToShow.images[4])}
             />
             <img
-              src={product.images[5]}
+              src={productToShow.images[5]}
               alt=""
               className="w-24 h-24 rounded-md cursor-pointer transition-opacity hover:opacity-80 duration-300"
-              onClick={() => setActiveImage(product.images[5])}
+              onClick={() => setActiveImage(productToShow.images[5])}
             />
           </div>
         </div>
@@ -73,7 +77,7 @@ const ProductPage = ({ product }) => {
             </svg>
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-            </svg> 
+            </svg>
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500 cursor-pointer hover:text-black" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
             </svg>
@@ -85,17 +89,21 @@ const ProductPage = ({ product }) => {
           <div className="flex items-center pb-5 border-b-2 border-black gap-1 cursor-default">
             <span className="text-md">Color:</span>
             <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-black hover:border-gray-500 transition ease-in duration-300"></button>
+            <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-red-500 hover:border-gray-500 transition ease-in duration-300" onClick={() => {
+              setShowRedProduct(!showRedProduct);
+              setActiveImage(showRedProduct ? product.images[0] : product.red.images[0]);
+            }}
+            ></button>
             <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-blue-500 hover:border-gray-500 transition ease-in duration-300"></button>
-            <button className="border-2 border-gray-200 rounded-full w-6 h-6 bg-red-500 hover:border-gray-500 transition ease-in duration-300"></button>
-          <div className="flex ml-4 gap-2 items-center cursor-default">
-            <span>Size: </span>
-            <select className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10">
-              <option >SM</option>
-              <option >M</option>
-              <option >L</option>
-              <option >XL</option>
-            </select>
-          </div>
+            <div className="flex ml-4 gap-2 items-center cursor-default">
+              <span>Size: </span>
+              <select className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10">
+                <option >SM</option>
+                <option >M</option>
+                <option >L</option>
+                <option >XL</option>
+              </select>
+            </div>
           </div>
           <p className="text-black lg:text-lg">
             {product.description}
