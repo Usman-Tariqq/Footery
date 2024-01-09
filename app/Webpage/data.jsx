@@ -6,20 +6,23 @@ export const items = [
     price: "150",
     title: "Men's Shoes",
 
-      images: [
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0ecb2c88-47db-4021-9c48-e0df34c7b355/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e394a55b-3897-4cc8-9f92-d585a0c6bfdd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/719f5ce7-1988-4442-a2b6-21a201f808b0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4b07d2b7-3b04-4b18-a23f-103d7f986c11/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5111e3b0-67bf-47e0-9d07-edf95d751d3a/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9e599e46-5702-4e61-a78f-0168bd325472/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-      ], 
+     yellow: {
+
+       images: [
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0ecb2c88-47db-4021-9c48-e0df34c7b355/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e394a55b-3897-4cc8-9f92-d585a0c6bfdd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/719f5ce7-1988-4442-a2b6-21a201f808b0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4b07d2b7-3b04-4b18-a23f-103d7f986c11/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5111e3b0-67bf-47e0-9d07-edf95d751d3a/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9e599e46-5702-4e61-a78f-0168bd325472/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+        ], 
+     }, 
     red: {
 
       images: [
@@ -46,20 +49,22 @@ export const items = [
     price: "165",
     title: "Women's Boots",
 
-    images: [
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b0a88f98-49f4-4cad-a742-c7c5bbda9ad1/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c643e219-8f43-4322-b580-608a97076d12/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2e445b01-9331-456f-ae92-a349822d557a/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/76fbe279-dc87-40c0-a3e6-06805c33b9fd/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee8a607d-7e63-4d41-9634-d5d9a32a6755/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/aa2d7193-443a-4cd5-9ee7-24f36fa30b8f/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
-    ],
+    black: {
+      images: [
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b0a88f98-49f4-4cad-a742-c7c5bbda9ad1/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c643e219-8f43-4322-b580-608a97076d12/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2e445b01-9331-456f-ae92-a349822d557a/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/76fbe279-dc87-40c0-a3e6-06805c33b9fd/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee8a607d-7e63-4d41-9634-d5d9a32a6755/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+  
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/aa2d7193-443a-4cd5-9ee7-24f36fa30b8f/air-jordan-1-brooklyn-womens-boots-kd9QhX.png",
+      ],
+    },
 
     red: {
   
@@ -86,20 +91,23 @@ export const items = [
     price: "180",
     title: "Men's Road Running Shoes",
 
-    images: [
+   gray: {
 
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4add04d-480d-415c-9ae8-ca8b047ddb5f/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60e26952-2f32-4be9-861f-46e2c705fcda/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c540362b-e164-47f8-a8db-0eb6a45f0f25/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7f65c040-ada9-4cf2-88e9-2ae971ac7c8f/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/72d956a9-8255-45a3-ba84-62fb1afcffcb/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-
-      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c8104b7a-8b1d-4f2b-9c5b-20387a9224e1/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
-    ],
+     images: [
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4add04d-480d-415c-9ae8-ca8b047ddb5f/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60e26952-2f32-4be9-861f-46e2c705fcda/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c540362b-e164-47f8-a8db-0eb6a45f0f25/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7f65c040-ada9-4cf2-88e9-2ae971ac7c8f/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/72d956a9-8255-45a3-ba84-62fb1afcffcb/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+ 
+       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c8104b7a-8b1d-4f2b-9c5b-20387a9224e1/invincible-3-mens-road-running-shoes-5ZZ4BQ.png",
+     ],
+   },
     red: {
   
       images: [
@@ -126,20 +134,23 @@ export const items = [
     price: "160",
     title: "Men's Shoes",
      
+    gray: {
+
       images: [
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/gorfwjchoasrrzr1fggt/air-max-270-mens-shoes-KkLcGR.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/wnjquengmjjmi0bvt1gh/air-max-270-mens-shoes-KkLcGR.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/air-max-270-mens-shoes-KkLcGR.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-cdccebeb-0303-484f-b968-6dfbc1a20cfc/air-max-270-mens-shoes-KkLcGR.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-884f46a4-8366-462d-9de0-f000127b1538/air-max-270-mens-shoes-KkLcGR.png",
-  
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-ccbce154-38f3-4479-beff-cbecb9745cac/air-max-270-mens-shoes-KkLcGR.png",
-      ],
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/gorfwjchoasrrzr1fggt/air-max-270-mens-shoes-KkLcGR.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/wnjquengmjjmi0bvt1gh/air-max-270-mens-shoes-KkLcGR.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/air-max-270-mens-shoes-KkLcGR.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-cdccebeb-0303-484f-b968-6dfbc1a20cfc/air-max-270-mens-shoes-KkLcGR.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-884f46a4-8366-462d-9de0-f000127b1538/air-max-270-mens-shoes-KkLcGR.png",
+    
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-ccbce154-38f3-4479-beff-cbecb9745cac/air-max-270-mens-shoes-KkLcGR.png",
+        ],
+    },
 
     red: {
       
