@@ -1,47 +1,47 @@
 export const items = [
   {
+    color: ["yellow", "red"],
     id: 1,
     name: "Air Jordan 1 Hi FlyEase",
     description: "The Air Jordan 1 Hi FlyEase combines the coveted style of Michael Jordan's first signature sneaker with a quick and easy one-handed entry system. There are no laces to tie, just a wraparound zipper and two straps to secure a custom fit.",
     price: "150",
     title: "Men's Shoes",
-
-     yellow: {
-
-       images: [
     
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0ecb2c88-47db-4021-9c48-e0df34c7b355/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-    
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e394a55b-3897-4cc8-9f92-d585a0c6bfdd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-    
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/719f5ce7-1988-4442-a2b6-21a201f808b0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-    
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4b07d2b7-3b04-4b18-a23f-103d7f986c11/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-    
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5111e3b0-67bf-47e0-9d07-edf95d751d3a/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-    
-          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9e599e46-5702-4e61-a78f-0168bd325472/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-        ], 
-     }, 
-    red: {
+      yellow: {
+        images: [
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0ecb2c88-47db-4021-9c48-e0df34c7b355/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e394a55b-3897-4cc8-9f92-d585a0c6bfdd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/719f5ce7-1988-4442-a2b6-21a201f808b0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4b07d2b7-3b04-4b18-a23f-103d7f986c11/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5111e3b0-67bf-47e0-9d07-edf95d751d3a/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+           "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9e599e46-5702-4e61-a78f-0168bd325472/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+        ],
+      },
+        red: {
 
-      images: [
-
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1d0f6af5-f607-4761-9bcf-a058d291ea66/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d42dba22-64a6-4ab5-b047-4a7e2e192935/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/614d8c7c-287c-4203-8a62-6a712aabb5e3/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0d85c44b-ca6f-4da0-8f56-45299f9332bd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/127b8880-2a69-4c9a-a941-0e07d8c7d402/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-        
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bcafb18a-a865-433c-926b-d52e2e934fb0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
-      ],
-    },
+          images: [
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1d0f6af5-f607-4761-9bcf-a058d291ea66/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+  
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d42dba22-64a6-4ab5-b047-4a7e2e192935/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/614d8c7c-287c-4203-8a62-6a712aabb5e3/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0d85c44b-ca6f-4da0-8f56-45299f9332bd/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+     
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/127b8880-2a69-4c9a-a941-0e07d8c7d402/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+            
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bcafb18a-a865-433c-926b-d52e2e934fb0/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+          ],
+        },
   },
   {
+    color: ["black", "pink"],
 
     id: 2,
     name: "Air Jordan 1 Brooklyn",
@@ -66,7 +66,7 @@ export const items = [
       ],
     },
 
-    red: {
+    pink: {
   
       images: [
   
@@ -85,6 +85,7 @@ export const items = [
     },
   },
   {
+    color: ["gray" , "red"],
     id: 3,
     name: "Nike Invincible 3",
     description: "With maximum cushioning to support every mile, the Invincible 3 has our highest level of comfort underfoot. Its plush and bouncy ZoomX foam helps you stay stable and fresh. In other words—it's going to feel good all day, no matter what you're doing. It has everything you need so you can propel down your preferred path and come back for your next run feeling ready and reinvigorated.",
@@ -128,6 +129,8 @@ export const items = [
   },
 
   {
+
+    color: ["gray" , "red", "brown"],
     id: 4,
     name: "Nike Air Max 270",
     description: "Nike's first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike's greatest innovation with its large window and fresh array of colors.",
@@ -169,7 +172,7 @@ export const items = [
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/pr3dy1hesi6cy3couh8u/air-max-270-mens-shoes-KkLcGR.png",
       ],
     },
-    cream: {
+    brown: {
 
       images: [
 

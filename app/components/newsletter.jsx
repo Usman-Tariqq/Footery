@@ -1,7 +1,20 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactUs = () => {
+
+  const notify = () => toast.info('You Subcribed to our Newsletter!', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: false,
+    theme: "light",
+    });
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -9,14 +22,15 @@ export const ContactUs = () => {
 
     emailjs.sendForm('service_h4j3h52', 'template_pfiwmrh', form.current, 'yiRMylYaMaqNDarnE')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   };
 
   return (
     <div className="flex flex-col justify-center items-center sm:w-full mb-10">
+      <ToastContainer />
       <h1 className="font-bold text-2xl md:text-3xl mt-10 text-black">
         Sign up for our newsletter
       </h1>
@@ -33,7 +47,7 @@ export const ContactUs = () => {
             name="from_email"
             placeholder="Enter your email"
           />
-          <button  type="submit" className="font-medium bg-black text-white text-md p-1 rounded-r" value="Send">
+          <button type="submit" className="font-medium bg-black text-white text-md p-1 rounded-r" value="Send" onClick={notify}>
             <p>Subscribe</p>
           </button>
         </form>
