@@ -172,7 +172,7 @@ export const items = [
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/pr3dy1hesi6cy3couh8u/air-max-270-mens-shoes-KkLcGR.png",
       ],
     },
-    brown: {
+    'brown': {
 
       images: [
 
