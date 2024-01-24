@@ -1,4 +1,4 @@
-import Product from "./Product";
+import Product from "./product";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
@@ -75,3 +75,4 @@ export default function App() {
     </>
   );
 }
+

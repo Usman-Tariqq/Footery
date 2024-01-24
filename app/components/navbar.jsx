@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const navbar = () => {
 
@@ -16,6 +17,19 @@ const navbar = () => {
   const toggleSearch = () => {
     setisOpen(!isOpen);
   };
+
+  const ref = useRef();
+
+  const toggleCart = () => {
+    if (ref.current.classList.contains('translate-x-full')) {
+      ref.current.classList.remove('translate-x-full')
+      ref.current.classList.add('translate-x-0')
+    }
+    else if (!ref.current.classList.contains('translate-x-full')) {
+      ref.current.classList.remove('translate-x-0')
+      ref.current.classList.add('translate-x-full')
+    }
+  }
 
   return (
     <>
@@ -54,7 +68,7 @@ const navbar = () => {
               </div>
             </div>
             <div className="hidden lg:flex items-center gap-6">
-              <FaShoppingCart className="hover:text-[#FFD700] cursor-pointer duration-300" />
+              <FaShoppingCart onClick={toggleCart} className="hover:text-[#FFD700] cursor-pointer duration-300" />
               <FaSearch className="hover:text-[#FFD700] cursor-pointer duration-300"
                 onClick={toggleSearch}
               />
@@ -68,6 +82,7 @@ const navbar = () => {
               </button>
             </div>
             <div className="lg:hidden flex items-center">
+              <FaShoppingCart onClick={toggleCart} className="hover:text-[#FFD700] cursor-pointer duration-300" />
               <button
                 className="inline-flex items-center justify-center p-2 rounder-md text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 onClick={toggleNavbar}
@@ -117,6 +132,37 @@ const navbar = () => {
             </div>
           </div>
         )}
+
+        <div ref={ref} className="w-72 opacity-100 z-50 min-h-screen fixed top-0 right-0 bg-yellow-500 px-8 py-10 text-black transform transition-transform translate-x-full">
+          <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
+          <span onClick={toggleCart} className="absolute top-5 right-2 cursor-pointer text-xl text-pink-500"><AiFillCloseCircle /></span>
+          <ol>
+            <li>
+              <div className="flex my-3">
+              <div className="w-2/3 font-semibold">Tshirt - wear the code</div>
+              <div className="flex justify-center items-center w-1/3 font-semibold">1</div>
+              </div>
+            </li>
+            <li>
+              <div className="flex my-3">
+              <div className="w-2/3 font-semibold">Tshirt - wear the code</div>
+              <div className="flex justify-center items-center w-1/3 font-semibold">1</div>
+              </div>
+            </li>
+            <li>
+              <div className="flex my-3">
+              <div className="w-2/3 font-semibold">Tshirt - wear the code</div>
+              <div className="flex justify-center items-center w-1/3 font-semibold">1</div>
+              </div>
+            </li>
+            <li>
+              <div className="flex my-3">
+              <div className="w-2/3 font-semibold">Tshirt - wear the code</div>
+              <div className="flex justify-center items-center w-1/3 font-semibold">1</div>
+              </div>
+            </li>
+          </ol>
+        </div>
       </nav>
     </>
   );

@@ -19,13 +19,13 @@ const ProductPage = ({ product }) => {
     <div className="max-w-7xl p-8 overflow-hidden">
       <div className="flex flex-col lg:flex-row justify-between gap-16 lg:items-center">
         <div className="flex flex-col gap-6 lg:w-2/4">
-        <img
+          <img
             src={activeImage}
             alt=""
             className="w-full h-full aspect-square object-cover rounded-xl"
           />
           <div className="grid grid-cols-3 mx-auto lg:grid lg:grid-cols-3 xl:flex md:flex flex-row justify-around gap-2 md:gap-6">
-          {activeImages.map((thumbnail, index) => (
+            {activeImages.map((thumbnail, index) => (
               <img
                 key={index}
                 src={thumbnail}
@@ -46,12 +46,12 @@ const ProductPage = ({ product }) => {
           </div>
           <div className="flex items-center pb-5 border-b-2 border-black gap-1 cursor-default">
             <span className="text-md">Color:</span>
-              {product.color.map((color) => (
+            {product.color.map((color) => (
               <button key={color} onClick={() => handleColorChange(color)} className="w-6 h-6 rounded-full mr-2 border border-gray-400 focus:outline-none focus:border-blue-500"
                 style={{ backgroundColor: color }}>
               </button>
             ))}
-    
+
             <div className="flex ml-4 gap-2 items-center cursor-default">
               <span>Size: </span>
               <select className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10">
