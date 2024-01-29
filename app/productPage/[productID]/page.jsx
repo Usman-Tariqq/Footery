@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { useCart } from "../../components/cartContext";
 
-export default function productPage({ params }) {
+export default function productpage({ params }) {
 
   const { cart, subTotal, addToCart, clearCart, removeFromCart } = useCart();
 

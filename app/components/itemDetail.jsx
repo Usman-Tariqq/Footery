@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 
-const ProductPage = ({ product, addToCart }) => {
+const productPage = ({ product, addToCart }) => {
 
   const [amount, setAmount] = useState(1);
   const [activeColor, setActiveColor] = useState(product.color[0]);
@@ -99,4 +99,4 @@ const ProductPage = ({ product, addToCart }) => {
   );
 };
 
-export default ProductPage;
+export default productPage;
