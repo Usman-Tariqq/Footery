@@ -12,7 +12,7 @@ export default function App() {
         loop={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         modules={[Autoplay]}
         className="mySwiper"
