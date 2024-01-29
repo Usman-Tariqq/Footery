@@ -3,7 +3,7 @@ export const items = [
     color: ["yellow", "red"],
     id: 1,
     name: "Air Jordan 1 Hi FlyEase",
-    description: "The Air Jordan 1 Hi FlyEase combines the coveted style of Michael Jordan's first signature sneaker with a quick and easy one-handed entry system. There are no laces to tie, just a wraparound zipper and two straps to secure a custom fit.",
+    description: "The Air Jordan 1 Hi FlyEase combines the coveted style of Michael Jordan's first signature sneaker with a quick and easy one-handed entry system. There are no laces to tie, just a wraparound zipper and two straps to secure a custom fit..",
     price: "150",
     title: "Men's Shoes",
     
