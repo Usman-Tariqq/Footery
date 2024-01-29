@@ -10,7 +10,7 @@ const Product = ({ name, price, image, id}) => {
 
 
   return (
-    <div className="lg:hover:scale-105 ease-in duration-500 w-90 rounded-lg shadow-black shadow-lg mt-20 mx-auto p-4 bg-white mb-20 cursor-pointer" onClick={() => router.push(`/productPage/${productid}`)}>
+    <div className="lg:hover:scale-105 ease-in duration-500 w-90 rounded-lg shadow-black shadow-lg mt-20 mx-auto p-4 bg-white mb-20 cursor-pointer" onClick={() => router.push(`/productpage/${productid}`)}>
       <img className="w-full rounded-2xl object-cover h-96" src={image} />
       <div className="flex flex-col justify-center px-2 py-2 rounded-md">
         <h5 className="text-lg">{name}</h5>

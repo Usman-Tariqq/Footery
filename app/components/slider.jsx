@@ -13,6 +13,7 @@ export default function App() {
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         modules={[Autoplay]}
         className="mySwiper"
