@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="md:flex md:justify-between items-center px-4">
         <a href="/" className="flex items-center">
           <span className="text-2xl uppercase font-semibold hover:underline">
-            Laces
+            Kickify
           </span>
         </a>
       </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         <span className="text-sm mb-4 md:mb-0 cursor-default">
           © 2023
           <a href="/" className="hover:underline uppercase ml-2">
-            Laces™
+            Kickify™
           </a>
           . All Rights Reserved.
         </span>

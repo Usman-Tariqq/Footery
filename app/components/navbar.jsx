@@ -43,7 +43,7 @@ const navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                   href="/"
                   className="text-2xl font-semibold hover:cursor-default hover:text-[#FFD700] duration-300"
                 >
-                  <img src="/logo.png" alt="404" className="w-40"/>
+                  <div className="uppercase">Kickify</div>
                 </Link>
               </div>
             </div>
