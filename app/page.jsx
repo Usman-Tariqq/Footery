@@ -4,12 +4,16 @@ import Banner from "./components/banner";
 import Slider from "./components/slider";
 import { ContactUs } from "./components/newsletter";
 import Footer from "./components/footer";
+import { useCart } from "./components/cartContext";
 
 export default function Home() {
+
+  const { cart, subTotal, addToCart, clearCart, removeFromCart } = useCart();
+
   return (
     <main className="w-full bg-gradient-to-br from-[#cfc9c9] via-[#ffed00] to-[#ff9800] overflow-hidden">
       <div className="w-full relative z-50 bg-black/70 text-white">
-        <Navbar />
+        <Navbar cart={cart} subTotal={subTotal} addToCart={addToCart} clearCart={clearCart} removeFromCart={removeFromCart} />
       </div>
       <div className="w-full">
         <Banner />

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 
-const ProductPage = ({ product }) => {
+const ProductPage = ({ product, addToCart }) => {
 
   const [amount, setAmount] = useState(1);
   const [activeColor, setActiveColor] = useState(product.color[0]);
@@ -14,6 +14,11 @@ const ProductPage = ({ product }) => {
   };
 
   const activeImages = product[activeColor]?.images || [];
+
+  const addToCartHandler = () => {
+    // Use the 'amount' variable here to pass the correct quantity to addToCart function
+    addToCart(product.id, amount, product.price, product.name, product.size, product.variant);
+  };
 
   return (
     <div className="max-w-7xl p-8 overflow-hidden">
@@ -70,7 +75,7 @@ const ProductPage = ({ product }) => {
             <div className="flex flex-row items-center">
               <button
                 className="bg-gray-100 py-2 px-5 rounded-lg text-violet-800 text-2xl lg:text-3xl"
-                onClick={() => setAmount((prev) => (prev > 0 ? prev - 1 : 0))}
+                onClick={() => setAmount((prev) => (prev > 1 ? prev - 1 : 1))}
               >
                 -
               </button>
@@ -84,7 +89,7 @@ const ProductPage = ({ product }) => {
                 +
               </button>
             </div>
-            <button className="bg-violet-800 text-white font-semibold py-2 px-8 lg:py-3 lg:px-16 rounded-xl h-full">
+            <button onClick={addToCartHandler} className="bg-violet-800 text-white font-semibold py-2 px-8 lg:py-3 lg:px-16 rounded-xl h-full">
               Add to Cart
             </button>
           </div>
