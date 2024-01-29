@@ -15,13 +15,13 @@ export default function productPage({ params }) {
 
   return (
     <div className="bg-gradient-to-br from-[#cfc9c9] via-[#ffed00] to-[#ff9800]">
-      <div className="w-full bg-black opacity-70 text-white">
-        <Navbar cart={cart} subTotal={subTotal} addToCart={addToCart} clearCart={clearCart} removeFromCart={removeFromCart} />
+      <div className="w-full bg-black/70 text-white">
+        <Navbar key={subTotal} cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromCart={removeFromCart} subTotal={subTotal}/>
       </div>
       <ItemDetail
-        product={product} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}
+        product={product} subTotal={subTotal} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}
       />
-      <div className="w-full bg-black opacity-70 text-white">
+      <div className="w-full bg-black/70 text-white">
         <Footer />
       </div>
     </div>

@@ -11,6 +11,7 @@ export const useCart = () => {
       const storedCart = localStorage.getItem("cart");
       if (storedCart) {
         setCart(JSON.parse(storedCart));
+        saveCart(JSON.parse(storedCart));
       }
     } catch (error) {
       console.error("Error loading cart from local storage:", error);

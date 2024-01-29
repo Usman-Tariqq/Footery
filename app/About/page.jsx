@@ -13,7 +13,7 @@ const Page = () => {
   
   return (
     <div className="bg-gradient-to-br from-[#b4a7a7c5] via-[#bdb1099c] to-[#ff9800] min-h-screen">
-      <div className="bg-black opacity-70">
+      <div className="bg-black/70">
       <Navbar cart={cart} subTotal={subTotal} addToCart={addToCart} clearCart={clearCart} removeFromCart={removeFromCart} />
       </div>
       <div className="flex flex-col lg:flex-row-reverse justify-between mx-4 md:mx-8 my-8 md:my-12">
@@ -61,7 +61,7 @@ const Page = () => {
           <p className="font-medium">Reviews</p>
         </div>
       </div>
-      <div className="bg-black opacity-70">
+      <div className="bg-black/70">
         <Footer />
       </div>
     </div>

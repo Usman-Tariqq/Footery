@@ -35,7 +35,7 @@ export const ContactUs = () => {
         Sign up for our newsletter
       </h1>
       <p className="w-96 sm:w-[550px] lg:w-1/2 text-lg md:text-2xl mt-4 ml-5 px-8 sm:px-5 text-black">
-        Hope you enjoyed your visit at our website Footery. if you would like to
+        Hope you enjoyed your visit at our website Laces. if you would like to
         buy products like these you may subscribe to our policy so we can send
         you news about our latest launch as soon as they launch
       </p>

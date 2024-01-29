@@ -13,7 +13,7 @@ export const viewport = {
 }
 
 export const metadata = {
-  title: 'Footery',
+  title: 'Laces',
   description: 'Choose your footwear',
   viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
 }

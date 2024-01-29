@@ -43,7 +43,7 @@ const navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                   href="/"
                   className="text-2xl font-semibold hover:cursor-default hover:text-[#FFD700] duration-300"
                 >
-                  <h1 className="uppercase">Footery</h1>
+                  <img src="/logo.png" alt="404" className="w-40"/>
                 </Link>
               </div>
             </div>
@@ -134,7 +134,7 @@ const navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
           </div>
         )}
 
-        <div ref={ref} className="w-72 z-50 min-h-screen fixed top-0 right-0 bg-yellow-500 px-8 py-10 text-black transform transition-transform translate-x-full">
+        <div ref={ref} className={`w-72 z-50 min-h-screen fixed top-0 right-0 bg-yellow-500 px-8 py-10 text-black transform transition-transform ${Object.keys(cart).length !== 0 ? 'translate-x-0' : 'translate-x-full'}`}>
           <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
           <span onClick={toggleCart} className="absolute top-5 right-2 cursor-pointer text-xl text-pink-500"><AiFillCloseCircle /></span>
           <ol>
@@ -151,8 +151,9 @@ const navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
               </li>
             })}
           </ol>
+          <div className='font-bold my-2 text-black'>Subtotal: ${subTotal}</div>
           <div className="flex">
-            <button className="flex mr-2 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm"><BsFillBagCheckFill className="m-1" />Checkout</button>
+            <Link href="/Checkout"><button className="flex mr-2 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm"><BsFillBagCheckFill className="m-1" />Checkout</button></Link>
             <button onClick={clearCart} className="flex mr-2 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm">Clear Cart</button>
           </div>
         </div>
