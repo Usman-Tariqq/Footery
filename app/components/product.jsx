@@ -2,7 +2,7 @@ import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
-const Product = ({ name, price, image, id, addToCart}) => {
+const Product = ({ name, price, image, id}) => {
 
   const router = useRouter()
   // defining id AFTER GIVING ID TO CARDS IN SLIDER as a variable to give id to the product page to render the next directory (productpage)
