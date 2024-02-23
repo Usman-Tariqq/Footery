@@ -82,7 +82,7 @@ const checkout = () => {
                             </li>
                         })}
                     </ol>
-                    <span className='font-bold'>Subtotal: {subTotal}</span>
+                    <span className='font-bold'>Subtotal:$ {subTotal}</span>
                 </div>
                 <div className="mx-4">
                     <button className="flex mr-2 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm"><BsFillBagCheckFill className="m-1" /> Pay ${subTotal}</button>

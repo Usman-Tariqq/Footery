@@ -1,9 +1,8 @@
-// cart.js
-
+// cartContext.jsx
 import { useState, useEffect } from 'react';
 
 export const useCart = () => {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([]);
   const [subTotal, setSubTotal] = useState(0);
 
   useEffect(() => {
@@ -35,34 +34,52 @@ export const useCart = () => {
     }
   };
 
-  const addToCart = (itemCode, quantity, price, name, size, variant) => {
-    let newCart = { ...cart };
-    if (itemCode in cart) {
-      newCart[itemCode].quantity += quantity;
+  const addToCart = (itemCode, quantity, price, name, color, size, variant, activeImage) => {
+    let newCart = cart;
+    console.log(itemCode)
+    const cartItemKey = `${itemCode}-${color}-${size}`;
+    const foundItemIndex = newCart.findIndex((cartItem) => cartItem.itemCode === itemCode && cartItem.color === color && cartItem.size === size);
+
+    if (foundItemIndex !== -1) {
+        newCart[foundItemIndex].quantity += quantity;
     } else {
-      newCart[itemCode] = { quantity, price, name, size, variant };
+        let object = {
+            itemCode,
+            quantity,
+            price,
+            name,
+            color,
+            size,
+            variant,
+            activeImage
+        };
+        newCart.push(object);
     }
-    setCart(newCart);
+
+    setCart([...newCart]); // Assuming setCart expects a new array reference to trigger re-renders
     saveCart(newCart);
-  };
+};
+  
+const removeFromCart = (itemCode, quantity, price, name, color, size) => {
+  let newCart = [...cart]; // Creating a new array instead of referencing the existing one directly
 
-  const clearCart = () => {
-    setCart({});
-    setSubTotal(0);
-    saveCart({});
-  };
+  const cartItemIndex = newCart.findIndex((cartItem) => cartItem.itemCode === itemCode && cartItem.color === color && cartItem.size === size);
 
-  const removeFromCart = (itemCode, quantity, price, name, size, variant) => {
-    let newCart = { ...cart };
-    if (itemCode in cart) {
-      newCart[itemCode].quantity -= quantity;
-      if (newCart[itemCode].quantity <= 0) {
-        delete newCart[itemCode];
+  if (cartItemIndex !== -1) {
+      newCart[cartItemIndex].quantity -= quantity;
+      if (newCart[cartItemIndex].quantity <= 0) {
+          newCart.splice(cartItemIndex, 1); // Remove item from cart if quantity is zero or negative
       }
       setCart(newCart);
       saveCart(newCart);
-    }
-  };
+  }
+};
 
+  
+  const clearCart = () => {
+    setCart([]);
+    setSubTotal(0);
+    saveCart([]);
+  };
   return { cart, subTotal, addToCart, clearCart, removeFromCart };
 };

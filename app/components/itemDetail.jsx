@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 
-
 const productPage = ({ product, addToCart }) => {
 
   const [amount, setAmount] = useState(1);
   const [activeColor, setActiveColor] = useState(product.color[0]);
+  const [activeSize, setActiveSize] = useState("SM");
   const [activeImage, setActiveImage] = useState(product[activeColor]?.images[0] || '');
 
   const handleColorChange = (color) => {
@@ -13,11 +13,15 @@ const productPage = ({ product, addToCart }) => {
     setActiveImage(product[color]?.images[0] || '');
   };
 
+  const handleSizeChange = (event) => {
+    setActiveSize(event.target.value);
+  };
+
   const activeImages = product[activeColor]?.images || [];
 
   const addToCartHandler = () => {
-    // Use the 'amount' variable here to pass the correct quantity to addToCart function
-    addToCart(product.id, amount, product.price, product.name, product.size, product.variant);
+    // Pass the activeImage property when adding to cart
+    addToCart(product.id, amount, product.price, product.name, activeColor, activeSize, product.variant, activeImage);
   };
 
   return (
@@ -59,11 +63,15 @@ const productPage = ({ product, addToCart }) => {
 
             <div className="flex ml-4 gap-2 items-center cursor-default">
               <span>Size: </span>
-              <select className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10">
-                <option >SM</option>
-                <option >M</option>
-                <option >L</option>
-                <option >XL</option>
+              <select
+                value={activeSize}
+                onChange={handleSizeChange}
+                className="rounded border appearance-none cursor-pointer border-gray-300 py-2 text-base pl-3 pr-10"
+              >
+                <option>SM</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
               </select>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="md:flex md:justify-between items-center px-4">
         <a href="/" className="flex items-center">
           <span className="text-2xl uppercase font-semibold hover:underline">
-            Kickify
+            Footery
           </span>
         </a>
       </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         <span className="text-sm mb-4 md:mb-0 cursor-default">
           © 2023
           <a href="/" className="hover:underline uppercase ml-2">
-            Kickify™
+            Footery™
           </a>
           . All Rights Reserved.
         </span>
@@ -81,7 +81,7 @@ const Footer = () => {
             <FaFacebookF />
 
           </a>
-          <a href="/" className="ms-3 md:ms-5 hover:text-[#FFD700]">
+          <a href="/" className="ms-3 md:ms-5 hover:text-[#FFD700]">  
             <BsDiscord />
           </a>
           <a href="/" className="ms-3 md:ms-5 hover:text-[#FFD700]">
